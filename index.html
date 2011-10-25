@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Form-Ready-To-Go</title>
+	<meta name="description" content="https://github.com/justinmarsan/Form-Ready-To-Go">
+	<meta name="author" content="Justin Marsan">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/form.css?v=2">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<form action="#">
+		<fieldset class="left-label blue-label blue-field">
+			<label>Label</label>
+			<input type="text" />
+			
+			<label for="">Label</label>
+			<select name="b" id="">
+				<option value="">Option</option>
+				<option value="">Option 2</option>
+			</select>
+			
+			<label for="">TextArea</label>
+			<textarea name="" id="" cols="30" rows="6"></textarea>
+			
+			<input type="submit" value="Submit" />
+		</fieldset>
+		
+		<fieldset class="right-label grey-label grey-field">
+			<label>Label</label>
+			<input type="text" />
+			
+			<label for="">Label</label>
+			<select name="c" id="">
+				<option value="">Option</option>
+				<option value="">Option 2</option>
+			</select>
+			
+			<label for="">TextArea</label>
+			<textarea name="" id="" cols="30" rows="6"></textarea>
+			
+			<input type="submit" value="Submit" />
+		</fieldset>
+		
+		<fieldset class="top-label brown-field brown-label">
+			<label for="">Text Field</label>
+			<input type="" />
+			
+			<label for="">Select</label>
+			<select name="d" id="">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+			</select>
+			
+			<label for="">Radio</label>
+			<label for="" class="radio-check-label"><input type="radio" />Option 1</label>
+			<label for="" class="radio-check-label"><input type="radio" />Option 2</label>
+			<label for="" class="radio-check-label"><input type="radio" />Option 3</label>
+			
+			<label for="">CheckBoxes</label>
+			<label for="" class="radio-check-label"><input type="checkbox" />Option 1</label>
+			<label for="" class="radio-check-label"><input type="checkbox" />Option 2</label>
+			<label for="" class="radio-check-label"><input type="checkbox" />Option 3</label>
+			
+			<label for="">Textarea</label>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+			
+			<input type="submit" value="Basic Submit" />
+		</fieldset>
+	</form>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/form-maker.js"></script>
+	<!--[if lt IE 7 ]>
+	<script src="js/libs/dd_belatedpng.js"></script>
+	<script> DD_belatedPNG.fix('img, .png_bg');</script>
+	<![endif]-->
+</body>
+</html>

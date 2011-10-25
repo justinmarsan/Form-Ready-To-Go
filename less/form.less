@@ -1,0 +1,221 @@
+/********** Forms **********/
+.rounded(@radius : 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.gradient(@top : white , @bottom : black) {
+	background: @top; /* Old browsers */
+	background: -moz-linear-gradient(top, @top 0%, @bottom 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@top), color-stop(100%,@bottom)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, @top 0%,@bottom 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, @top 0%,@bottom 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, @top 0%,@bottom 100%); /* IE10+ */
+	background: linear-gradient(top, @top 0%,@bottom 100%); /* W3C */
+}
+
+.shadow(@color : black, @top : 0, @left : 0, @blur : 10px) {
+	-moz-box-shadow: @top @left @blur @color;
+	-webkit-box-shadow: @top @left @blur @color;
+	box-shadow: @top @left @blur @color;
+}
+
+.textshadow(@color : black, @top : 0, @left : 0, @blur : 10px) {
+	-moz-text-shadow: @top @left @blur @color;
+	-webkit-text-shadow: @top @left @blur @color;
+	text-shadow: @top @left @blur @color;
+}
+
+.opacity(@n : 50) {
+	filter: alpha(opacity=@n);
+	-moz-opacity:@n / 100;
+	-khtml-opacity:@n / 100;
+	opacity:@n / 100;
+}
+
+.clear() {
+	overflow:auto;
+	zoom:1;
+}
+
+.clearfix() {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.vertical-middle(@container, @self) {
+	margin-top:(@container - @self) / 2;
+}
+
+/*** Reset ***/
+body {
+	font-family: 'Lucida Grande', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+input, textarea, select, .form-select {
+	border: 1px solid transparent;
+	background: #eee;
+	color: #333;
+	outline: none;
+	.rounded(3px);
+	font-size: 13px;
+	line-height: 20px;
+}
+
+fieldset {
+	padding-bottom: 20px;
+	border: none;
+}
+
+.radio-check-label {
+	/* radio, checkbox */
+	margin-top: 14px 0 6px;
+	
+	input {
+		float: left;
+		margin: 3px 14px 0 0;
+	}
+}
+
+.form-select {
+	line-height: 20px;
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	cursor: pointer;
+	
+	li {
+		display: none;
+		line-height: 20px;
+		margin: 1px 24px 2px 3px;
+		position: relative;
+	}
+	
+	li.selected {
+		display: block;
+	}
+}
+
+.form-select:after {
+	content: ".";
+	font-size: 1px;
+	color: transparent;
+	border-color: #333 transparent transparent transparent;
+	border-style:solid;
+	border-width:5px;
+	width:0;
+	height:0;
+	position: absolute;
+	top: 12px;
+	right: 8px;
+}
+
+.form-select.form-select-open {
+	li {
+		display: block;
+	}
+}
+
+.form-select.form-select-open:after {
+	border-color: transparent transparent #333 transparent;
+	top: 6px;
+}
+/** / Reset **/
+
+
+/********** Positioning **********/
+/*** Top Labels ***/
+.top-label {
+	position: relative;
+	bottom: 10px;
+	
+	label {
+		display: block;
+		margin: 28px 0 2px;
+	}
+	
+	label:after {
+		content: " :";
+	}
+	
+	.radio-check-label {
+		margin: 14px 0 6px;
+	}
+	
+	.radio-check-label:after {
+		content: none;
+	}
+	
+	input, textarea, select, .form-select {
+		display:block;
+		line-height: 20px;
+		padding: 4px 3px 4px;
+	}
+	
+	.form-select {
+		display: inline-block;
+	}
+	
+	input[type=button], input[type=submit] {
+		margin: 20px 0 0;
+		padding: 4px 10px 4px 9px;
+	}
+	
+	textarea {
+		position: relative;
+		top: 1px;
+	}
+}
+/** / Top Labels **/
+
+/*** Left Label ***/
+.left-label {
+	position: relative;
+	
+	label {
+		float: left;
+		clear: left;
+		margin: 20px 0;
+		width: 120px;
+	}
+	
+	input, textarea, select, .form-select {
+		float: left;
+		display:block;
+		margin: 14px 0 0;
+		padding: 4px 3px 4px;
+		
+		line-height: 20px;
+	}
+	
+	input[type=button], input[type=submit] {
+		clear: left;
+		margin: 20px 0 0 120px;
+		padding: 4px 10px 4px 9px;
+	}
+	
+	select {
+		margin: 18px 0 0;
+	}
+}
+/** / Left Label **/
+
+/*** Right Label ***/
+.right-label {
+	.left-label();
+	
+	label {
+		padding-right: 20px;
+		width: 100px;
+		
+		text-align: right;
+	}
+}
+/** / Right Label **/
+/********* / Positioning *********/
