@@ -7,6 +7,8 @@ On top of that some JS (jQuery powered) deals with (or will deal with) some of t
 
 That's pretty much it !
 
+See for examples : http://justinmarsan.github.com/Form-Ready-To-Go/
+
 
 Provided Classes
 ================
