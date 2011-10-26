@@ -2,7 +2,10 @@
   $(function() {
     $('select').each(function() {
       var $ul;
-      $(this).hide().after('<ul class="form-select" name="' + $(this).attr('name') + '"></ul>');
+      $(this).css({
+        position: 'absolute',
+        left: '-99999px'
+      }).after('<ul class="form-select" name="' + $(this).attr('name') + '"></ul>');
       $ul = $('ul.form-select[name=' + $(this).attr('name') + ']');
       return $(this).find('option').each(function() {
         if ($(this).attr('selected')) {
