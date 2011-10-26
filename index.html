@@ -87,27 +87,27 @@
 	<form action="#" method="post">
 		<fieldset class="left-label">
 			<label for="form-4-text-input">Text Field</label>
-			<input type="form-4-text-input" />
+			<input type="form-4-text-input" placeholder="placeholder" />
 			
 			<label for="form-4-select">Select</label>
 			<select name="form-4-select" id="">
 				<option value="1">Option 1</option>
 				<option value="2">Option 2</option>
-				<option value="3">Option 3</option>
+				<option value="3" selected>Option 3</option>
 			</select>
 			
 			<div class="fake-label">Radio</div>
-			<label for="form-4-radio" class="radio-check-label"><input type="radio" />Option 1</label>
-			<label for="form-4-radio" class="radio-check-label"><input type="radio" />Option 2</label>
-			<label for="form-4-radio" class="radio-check-label"><input type="radio" />Option 3</label>
+			<label class="radio-check-label"><input type="radio" name="form-4-radio" value="1" />Option 1</label>
+			<label class="radio-check-label"><input type="radio" name="form-4-radio" value="2" checked />Option 2</label>
+			<label class="radio-check-label"><input type="radio" name="form-4-radio" value="3" />Option 3</label>
 			
 			<div class="fake-label">CheckBoxes</div>
-			<label for="form-4-check" class="radio-check-label"><input type="checkbox" />Option 1</label>
-			<label for="form-4-check" class="radio-check-label"><input type="checkbox" />Option 2</label>
-			<label for="form-4-check" class="radio-check-label"><input type="checkbox" />Option 3</label>
+			<label class="radio-check-label"><input type="checkbox" name="form-4-check" value="1" />Option 1</label>
+			<label class="radio-check-label"><input type="checkbox" name="form-4-check" value="2" />Option 2</label>
+			<label class="radio-check-label"><input type="checkbox" name="form-4-check" value="3" checked />Option 3</label>
 			
 			<label for="form-4-textarea">Textarea</label>
-			<textarea name="form-4-textarea" id="" cols="30" rows="10"></textarea>
+			<textarea name="form-4-textarea" id="" cols="30" rows="10">some text</textarea>
 			
 			<input type="submit" value="Basic Submit" />
 		</fieldset>
