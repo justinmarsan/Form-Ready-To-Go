@@ -7,7 +7,7 @@ fieldset{padding-bottom:20px;border:none;}
 .form-select:after{content:".";font-size:1px;color:transparent;border-color:#333 transparent transparent transparent;border-style:solid;border-width:5px;width:0;height:0;position:absolute;top:12px;right:8px;}
 .form-select.form-select-open li{display:block;}
 .form-select.form-select-open:after{border-color:transparent transparent #333 transparent;top:6px;}
-.top-label{position:relative;bottom:10px;}.top-label label{display:block;margin:28px 0 2px;}
+.top-label{position:relative;bottom:10px;}.top-label label,.top-label .fake-label{display:block;margin:28px 0 2px;}
 .top-label label:after{content:" :";}
 .top-label .radio-check-label{margin:14px 0 6px;}
 .top-label .radio-check-label:after{content:none;}
@@ -15,14 +15,14 @@ fieldset{padding-bottom:20px;border:none;}
 .top-label .form-select{display:inline-block;}
 .top-label input[type=button],.top-label input[type=submit]{margin:20px 0 0;padding:4px 10px 4px 9px;}
 .top-label textarea{position:relative;top:1px;}
-.left-label{position:relative;}.left-label label{float:left;clear:left;margin:20px 0;width:120px;}
+.left-label{position:relative;}.left-label label,.left-label .fake-label{float:left;clear:left;margin:20px 0;width:120px;}
 .left-label input,.left-label textarea,.left-label select,.left-label .form-select{float:left;display:block;margin:14px 0 0;padding:4px 3px 4px;line-height:20px;}
 .left-label input[type=button],.left-label input[type=submit]{clear:left;margin:20px 0 0 120px;padding:4px 10px 4px 9px;}
 .left-label select{margin:18px 0 0;}
 .left-label .radio-check-label{margin:20px 0 6px;clear:none;float:left;}.left-label .radio-check-label input{float:left;margin:5px 14px 0 0;}
-.right-label{position:relative;}.right-label label{float:left;clear:left;margin:20px 0;width:120px;}
+.right-label{position:relative;}.right-label label,.right-label .fake-label{float:left;clear:left;margin:20px 0;width:120px;}
 .right-label input,.right-label textarea,.right-label select,.right-label .form-select{float:left;display:block;margin:14px 0 0;padding:4px 3px 4px;line-height:20px;}
 .right-label input[type=button],.right-label input[type=submit]{clear:left;margin:20px 0 0 120px;padding:4px 10px 4px 9px;}
 .right-label select{margin:18px 0 0;}
 .right-label .radio-check-label{margin:20px 0 6px;clear:none;float:left;}.right-label .radio-check-label input{float:left;margin:5px 14px 0 0;}
-.right-label label{padding-right:20px;width:100px;text-align:right;}
+.right-label label,.right-label .fake-label{padding-right:20px;width:100px;text-align:right;}
