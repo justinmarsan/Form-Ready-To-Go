@@ -1,7 +1,7 @@
 $ ->
 	#replace select
 	$('select').each(  ->
-		$(@).hide().after('<ul class="form-select" name="'+$(@).attr('name')+'"></ul>')
+		$(@).css({position: 'absolute', left: '-99999px'}).after('<ul class="form-select" name="'+$(@).attr('name')+'"></ul>')
 		$ul = $('ul.form-select[name='+$(@).attr('name')+']')
 		$(@).find('option').each( ->
 			if $(@).attr('selected')
